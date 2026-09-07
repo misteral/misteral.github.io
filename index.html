@@ -964,7 +964,7 @@
                     </ul>
                     </nav>
                     <section class="col-md-3 card-wrapper profile-card-wrapper affix">
-                        <div class="card profile-card"><span class="profile-pic-container"><div class="profile-pic"><img data-src="holder.js/100x100" alt="Aleksandr Bobrov" src="avatar.jpeg" itemprop="image" class="media-object img-circle center-block"/></div><div class="name-and-profession text-center"><h3 itemprop="name"><b>Aleksandr Bobrov</b></h3><h5 itemprop="jobTitle" class="text-muted">Chief Technology Officer</h5></div></span>
+                        <div class="card profile-card"><span class="profile-pic-container"><div class="profile-pic"><img data-src="holder.js/100x100" alt="Aleksandr Bobrov" src="avatar.jpeg" itemprop="image" class="media-object img-circle center-block"/></div><div class="name-and-profession text-center"><h3 itemprop="name"><b>Aleksandr Bobrov</b></h3><h5 itemprop="jobTitle" class="text-muted">CTO | AI/ML Engineer | Industrial IoT</h5></div></span>
                             <hr/>
                             <div class="contact-details clearfix">
                                 <div class="detail"><span class="icon"><i class="icon fs-lg icon-location"></i></span>
@@ -975,7 +975,7 @@
                                 </div>
                                 <div class="detail"><span title="Languages I speak" class="icon"><i class="icon fs-lg icon-language"></i></span>
                                     <span
-                                    class="info">Russian, English</span>
+                                    class="info">English, Russian</span>
                                 </div>
                             </div>
                             <hr/>
@@ -1002,10 +1002,12 @@
                                         <div class="card card-nested">
                                             <div itemprop="description" class="content mop-wrapper">
                                                 <p>Experienced and outcome-driven professional with 15+ years in software
-                                                    development, team leadership, and scalable architecture design. Expert
-                                                    in AI/ML pipelines, cloud infrastructure, and full product lifecycle from
-                                                    MVP to production. Strong background in managing international teams and
-                                                    delivering business value through technical excellence.</p>
+                                                    development, team leadership, scalable architecture, and product delivery.
+                                                    Expert in AI/ML pipelines, agent-first software delivery (harness engineering),
+                                                    industrial IoT/RTLS systems, cloud infrastructure, and full product lifecycle
+                                                    from MVP to production. Strong background in managing international teams,
+                                                    coordinating partners, and delivering business value through technical
+                                                    excellence.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -1018,47 +1020,114 @@
                                         <ul class="list-unstyled clear-margin">
                                             <li class="card card-nested clearfix">
                                                 <div class="content">
-                                                    <p class="clear-margin relative"><i rel="tooltip" title="Currently Working" data-placement="left" class="icon-circle current-event"></i><strong>Senior Software Engineer, Machine Learning</strong>,&nbsp;
-                                                        <a
-                                                        href="https://transleta.ai" target="_blank">Transleta.ai</a>
-                                                    </p>
-                                                    <p class="text-muted"><small><span class="space-right">Oct, 2024 - Present</span><span><i class="icon-clock mr-5"></i>5 months</span></small>
+                                                    <p class="clear-margin relative"><i rel="tooltip" title="Currently Working" data-placement="left" class="icon-circle current-event"></i><strong>Chief Technology Officer</strong>,&nbsp;Tabyn
+                                                        (Global Concordia Solutions)</p>
+                                                    <p class="text-muted"><small><span class="space-right">Apr, 2026 - Present</span><span><i class="icon-clock mr-5"></i>5 months</span></small>
                                                     </p>
                                                     <div class="mop-wrapper space-bottom">
-                                                        <p>Transleta.ai is an AI-powered document translation startup focused on
-                                                            context-aware translation from underrepresented languages, using large
-                                                            language models and custom pipelines.</p>
+                                                        <p>Second Global Concordia Solutions product, run in parallel with Shelter:
+                                                            a LoRaWAN livestock-monitoring platform for a pasture farm in Kazakhstan,
+                                                            with solar GNSS/BLE ear tags, an on-farm Rust server, a web console, and
+                                                            a role-based Android app. Sole engineer from requirements to release.</p>
                                                     </div>
                                                     <ul>
                                                         <li class="mop-wrapper">
-                                                            <p>Trained YOLO model for layout detection including text, stamps, and images
-                                                                in scanned documents.</p>
+                                                            <p>Built the end-to-end stack: tag uplinks through ChirpStack/MQTT into a
+                                                                Rust ingest server (axum, sqlx, PostGIS), REST and SSE, a React/MapLibre
+                                                                operator map, and a Kotlin/Compose Android app.</p>
                                                         </li>
                                                         <li class="mop-wrapper">
-                                                            <p>Designed LLM pipelines for context-aware document translation from low-resource
-                                                                languages.</p>
+                                                            <p>Chose an own Rust backend over a closed vendor stack and recorded the
+                                                                decision as an ADR, so protocol parsing, tenancy, and evidence journaling
+                                                                stay under the team&#39;s control.</p>
                                                         </li>
                                                         <li class="mop-wrapper">
-                                                            <p>Developed configuration systems for AI document translation with customizable
-                                                                translation rules.</p>
+                                                            <p>Implemented multi-tenant isolation at the data layer with role-based write/read
+                                                                enforcement, a separate provisioning API, hashed credentials, and login
+                                                                throttling.</p>
                                                         </li>
                                                         <li class="mop-wrapper">
-                                                            <p>Deployed machine learning models for inference in production environments.</p>
+                                                            <p>Wrote a pure Rust codec for the tag protocol and corrected several vendor-spec
+                                                                errors from live uplinks; a raw uplink journal is always kept as evidence.</p>
                                                         </li>
                                                         <li class="mop-wrapper">
-                                                            <p>Implemented pipeline evaluation strategies using BERTScore for quality
-                                                                measurement.</p>
+                                                            <p>Verified a 2,000-tag scale target with a synthetic uplink emulator; ran
+                                                                multi-day live tests with real solar tags at zero decode errors.</p>
                                                         </li>
                                                         <li class="mop-wrapper">
-                                                            <p>Optimized pipeline performance using DSPy to improve cost-efficiency and
-                                                                accuracy.</p>
+                                                            <p>Reverse-engineered the tag&#39;s BLE configuration interface and firmware
+                                                                behaviour; reviewed and recomputed a supplied collar-mount design and generated
+                                                                a parametric STL for printing.</p>
                                                         </li>
                                                         <li class="mop-wrapper">
-                                                            <p>Built a robust production environment for code deployment and execution.</p>
+                                                            <p>Set up CI with clippy and ESLint at zero warnings, database integration
+                                                                tests on fresh PostGIS instances, ru/en/kk localisation enforced at type-check
+                                                                time, and a tag-driven release pipeline building server, console, and APK.</p>
                                                         </li>
                                                         <li class="mop-wrapper">
-                                                            <p>Led development from MVP to production-ready code, ensuring scalability
-                                                                and maintainability.</p>
+                                                            <p>Built the repository agent-first from day one: AGENTS.md map, 18 ADRs,
+                                                                execution plans, and an AI reviewer in the pre-commit hook.</p>
+                                                        </li>
+                                                        <li class="mop-wrapper">
+                                                            <p>Own the hardware side as well: negotiated enclosure changes on site with
+                                                                the tag manufacturer in China, designed and 3D-printed a collar mount for
+                                                                bulls that tear ear tags off, and work on precise positioning and the tag&#39;s
+                                                                energy budget (radio duty against power draw and solar intake).</p>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li class="card card-nested clearfix">
+                                                <div class="content">
+                                                    <p class="clear-margin relative"><i rel="tooltip" title="Currently Working" data-placement="left" class="icon-circle current-event"></i><strong>Chief Technology Officer</strong>,&nbsp;Shelter
+                                                        (Global Concordia Solutions)</p>
+                                                    <p class="text-muted"><small><span class="space-right">Apr, 2025 - Present</span><span><i class="icon-clock mr-5"></i>1 year 4 months</span></small>
+                                                    </p>
+                                                    <div class="mop-wrapper space-bottom">
+                                                        <p>Led product and technical development of Shelter, an industrial safety
+                                                            platform for personnel positioning, incident monitoring, SOS workflows,
+                                                            and gas-detection scenarios on hazardous sites using LoRaWAN-based RTLS.</p>
+                                                    </div>
+                                                    <ul>
+                                                        <li class="mop-wrapper">
+                                                            <p>Developed and maintained Shelter software components while translating
+                                                                field and product needs into structured engineering tasks in Yandex Tracker.</p>
+                                                        </li>
+                                                        <li class="mop-wrapper">
+                                                            <p>Designed and refined RBAC, incident handling, dispatcher workflows, SOS
+                                                                alerts, coverage/offline state handling, LoRa Spread Factor visibility,
+                                                                and gas alert voice notifications.</p>
+                                                        </li>
+                                                        <li class="mop-wrapper">
+                                                            <p>Coordinated product quality with developers, contractors, and OEM partners;
+                                                                prepared documentation, manuals, presentations, and commercial proposals.</p>
+                                                        </li>
+                                                        <li class="mop-wrapper">
+                                                            <p>Built subscription, licensing, and OEM white-label models including volume
+                                                                discounts, multi-year coefficients, and Base / Plus / Critical tiers.</p>
+                                                        </li>
+                                                        <li class="mop-wrapper">
+                                                            <p>Diagnosed hardware and radio issues around LoRa trackers, base stations,
+                                                                antennas, firmware behavior, GPS/BLE modules, gas sensors, and industrial
+                                                                Linux environments.</p>
+                                                        </li>
+                                                        <li class="mop-wrapper">
+                                                            <p>Run the company&#39;s repositories agent-first: AGENTS.md maps, ADRs and
+                                                                execution plans as decision memory, project skills and MCP servers so coding
+                                                                agents take a task from Yandex Tracker, open a PR, pass automated review
+                                                                and tests, and ship through the release pipeline with tracker status synced
+                                                                from CI; the whole development team works through these skills, agents,
+                                                                and MCP servers.</p>
+                                                        </li>
+                                                        <li class="mop-wrapper">
+                                                            <p>Ship the platform end to end as installable packages for customer machines
+                                                                and servers (Linux .deb/.rpm installers, Debian-packaged backend stack),
+                                                                with OS-vendor compatibility certification of the software.</p>
+                                                        </li>
+                                                        <li class="mop-wrapper">
+                                                            <p>Built the incident-video module (body-camera ingestion, incident matching,
+                                                                protected storage, in-app streaming) and map integrations (Leaflet operator
+                                                                maps, offline MBTiles on Android).</p>
                                                         </li>
                                                     </ul>
                                                 </div>
@@ -1066,38 +1135,56 @@
                                             <li class="card card-nested clearfix">
                                                 <div class="content">
                                                     <p class="clear-margin relative"><strong>Co-founder &amp; Chief Technology Officer</strong>,&nbsp;<a href="https://izetta.io/"
-                                                        target="_blank">iZetta_io</a>
+                                                        target="_blank">iZetta.io</a>
                                                     </p>
-                                                    <p class="text-muted"><small><span class="space-right">Mar, 2024 - Oct, 2024</span><span><i class="icon-clock mr-5"></i>7 months</span></small>
+                                                    <p class="text-muted"><small><span class="space-right">Mar, 2024 - Apr, 2025</span><span><i class="icon-clock mr-5"></i>1 year 1 month</span></small>
                                                     </p>
                                                     <div class="mop-wrapper space-bottom">
-                                                        <p>Led the development of innovative project architectures, managed cross-functional
-                                                            teams, and articulated a clear vision to drive technological advancements.</p>
+                                                        <p>Co-founder and CTO of a startup that built two AI products: iZetta, conversational
+                                                            AI sales assistants for 24/7 lead conversations across website chat, WhatsApp,
+                                                            Telegram and email (Mar–Oct 2024), and Transleta.ai, AI document translation
+                                                            for a translation agency using layout detection, OCR and LLM pipelines
+                                                            (Oct 2024–Apr 2025).</p>
                                                     </div>
                                                     <ul>
                                                         <li class="mop-wrapper">
-                                                            <p>Developed and tested an MVP, proving its value with paying customers.</p>
+                                                            <p>iZetta: designed the architecture (React, Python/FastAPI and PostgreSQL
+                                                                on Azure, Chatwoot for messaging channels, calendar and email integrations,
+                                                                OpenAI-based RAG over customer knowledge bases) and took the MVP to a paying
+                                                                client.</p>
                                                         </li>
                                                         <li class="mop-wrapper">
-                                                            <p>Built an international team for technical implementation.</p>
+                                                            <p>iZetta: built and led the technical team (one full-stack developer and
+                                                                a designer); owned process integration and the AI pipelines; established
+                                                                a zero-downtime deployment pipeline.</p>
                                                         </li>
                                                         <li class="mop-wrapper">
-                                                            <p>Designed a scalable project architecture and supporting services.</p>
+                                                            <p>iZetta: shipped a customer portal, human handoff to sales staff, and conversation-quality
+                                                                scoring with an LLM judge.</p>
                                                         </li>
                                                         <li class="mop-wrapper">
-                                                            <p>Implemented an infrastructure for stable operations.</p>
+                                                            <p>Transleta.ai: sole engineer of the product; trained a YOLO layout model
+                                                                for text, stamps and images in scanned documents on a self-labeled dataset
+                                                                of about 1,000 documents.</p>
                                                         </li>
                                                         <li class="mop-wrapper">
-                                                            <p>Established a zero-downtime deployment pipeline.</p>
+                                                            <p>Transleta.ai: designed LLM pipelines for context-aware document translation
+                                                                from low-resource languages, with configurable per-customer translation
+                                                                rules.</p>
                                                         </li>
                                                         <li class="mop-wrapper">
-                                                            <p>Fine-tuned AI models for customer-specific solutions.</p>
+                                                            <p>Transleta.ai: implemented BERTScore evaluation against human reference
+                                                                translations and DSPy optimization for cost and accuracy.</p>
                                                         </li>
                                                         <li class="mop-wrapper">
-                                                            <p>Developed and executed a structured product roadmap.</p>
+                                                            <p>Transleta.ai: deployed the models and the production environment on Azure
+                                                                with Docker and CI auto-deploy; led the code from MVP to production-ready;
+                                                                translators worked through a Telegram bot.</p>
                                                         </li>
                                                         <li class="mop-wrapper">
-                                                            <p>Applied Agile methodology to ensure continuous improvements.</p>
+                                                            <p>Transleta.ai: about 40% lower translation cost and processing tens of
+                                                                times faster than the manual workflow (team estimates), thousands of documents
+                                                                processed in production.</p>
                                                         </li>
                                                     </ul>
                                                 </div>
@@ -1183,19 +1270,21 @@
                                             </li>
                                             <li class="card card-nested clearfix">
                                                 <div class="content">
-                                                    <p class="clear-margin relative"><strong>Self Employed</strong>,&nbsp;Self-employed</p>
+                                                    <p class="clear-margin relative"><strong>Sabbatical: applied AI self-study and indie macOS apps</strong>,&nbsp;Career
+                                                        break</p>
                                                     <p class="text-muted"><small><span class="space-right">Apr, 2023 - Dec, 2023</span><span><i class="icon-clock mr-5"></i>8 months</span></small>
                                                     </p>
                                                     <div class="mop-wrapper space-bottom">
-                                                        <p>Technology consultant specializing in iOS app development with a focus
-                                                            on AI enhancements</p>
+                                                        <p>Nine-month break after Scissorboy: studied applied AI (LLMs, agents, evaluation)
+                                                            and built independent macOS applications, later published under the ITBeaver
+                                                            brand.</p>
                                                     </div>
                                                 </div>
                                             </li>
                                             <li class="card card-nested clearfix">
                                                 <div class="content">
                                                     <p class="clear-margin relative"><strong>Chief Technology Officer</strong>,&nbsp;<a href="http://www.welladigital.com/"
-                                                        target="_blank">Software Development for the Professional Beauty(Scissorboy)</a>
+                                                        target="_blank">Scissorboy (Wella Digital)</a>
                                                     </p>
                                                     <p class="text-muted"><small><span class="space-right">Sep, 2022 - Mar, 2023</span><span><i class="icon-clock mr-5"></i>6 months</span></small>
                                                     </p>
@@ -1236,7 +1325,7 @@
                                             <li class="card card-nested clearfix">
                                                 <div class="content">
                                                     <p class="clear-margin relative"><strong>Senior Software Development Engineer</strong>,&nbsp;<a href="http://www.welladigital.com/"
-                                                        target="_blank">Software Development for the Professional Beauty(Scissorboy)</a>
+                                                        target="_blank">Scissorboy (Wella Digital)</a>
                                                     </p>
                                                     <p class="text-muted"><small><span class="space-right">Feb, 2019 - Sep, 2022</span><span><i class="icon-clock mr-5"></i>3 years 7 months</span></small>
                                                     </p>
@@ -1381,7 +1470,7 @@
                                             </li>
                                             <li class="card card-nested clearfix">
                                                 <div class="content">
-                                                    <p class="clear-margin relative"><strong>Senior Developer, Engineer I Category</strong>,&nbsp;<a href="http://tchaikovsky-tr.gazprom.ru/"
+                                                    <p class="clear-margin relative"><strong>Senior Developer, Engineer 1st Category</strong>,&nbsp;<a href="http://tchaikovsky-tr.gazprom.ru/"
                                                         target="_blank">Gazprom Transgaz Chaikovsky, Gazprom</a>
                                                     </p>
                                                     <p class="text-muted"><small><span class="space-right">Aug, 2003 - Feb, 2012</span><span><i class="icon-clock mr-5"></i>8 years 6 months</span></small>
@@ -1500,6 +1589,16 @@
                                                     </div>
                                                 </li>
                                                 <li class="card card-nested card-skills">
+                                                    <div class="skill-info"><strong>Agentic Engineering</strong>
+                                                        <div class="space-top labels"><span class="label label-keyword">Harness Engineering</span><span class="label label-keyword">Agent-First Repositories (AGENTS.md, ADRs, Exec Plans)</span>
+                                                            <span
+                                                            class="label label-keyword">Claude Code / Codex / Gemini / Pi Agents</span><span class="label label-keyword">Custom Skills &amp; MCP Servers</span>
+                                                                <span
+                                                                class="label label-keyword">Agent-Driven Code Review</span><span class="label label-keyword">Agent CI/CD &amp; Release Pipelines</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="card card-nested card-skills">
                                                     <div class="skill-info"><strong>MLOps &amp; Infrastructure</strong>
                                                         <div class="space-top labels"><span class="label label-keyword">Docker</span><span class="label label-keyword">Kubernetes</span>
                                                             <span
@@ -1547,7 +1646,19 @@
                                                             <span
                                                             class="label label-keyword">Pivotal Tracker</span><span class="label label-keyword">GitHub</span>
                                                                 <span
-                                                                class="label label-keyword">GitLab</span>
+                                                                class="label label-keyword">GitLab</span><span class="label label-keyword">Yandex Tracker</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="card card-nested card-skills">
+                                                    <div class="skill-info"><strong>Industrial IoT &amp; RTLS</strong>
+                                                        <div class="space-top labels"><span class="label label-keyword">LoRaWAN</span><span class="label label-keyword">LoRa</span>
+                                                            <span
+                                                            class="label label-keyword">RTLS</span><span class="label label-keyword">BLE</span><span class="label label-keyword">GPS</span>
+                                                                <span
+                                                                class="label label-keyword">LPWAN</span><span class="label label-keyword">RBAC</span><span class="label label-keyword">Hardware Diagnostics</span>
+                                                                    <span
+                                                                    class="label label-keyword">Industrial Safety</span>
                                                         </div>
                                                     </div>
                                                 </li>
@@ -1564,7 +1675,7 @@
                                             <ul class="list-unstyled clear-margin">
                                                 <li class="card card-nested">
                                                     <div class="content">
-                                                        <p class="clear-margin relative"><strong>Automated Systems of Information Processing and Control, Specialist,&nbsp;</strong>Kalashnikov
+                                                        <p class="clear-margin relative"><strong>Automated Systems of Information Processing and Control, Specialist (5-year engineering degree),&nbsp;</strong>Kalashnikov
                                                             Izhevsk State Technical University</p>
                                                         <p class="text-muted"><small>Sep, 1998 - Jun, 2003</small>
                                                         </p><i></i>
