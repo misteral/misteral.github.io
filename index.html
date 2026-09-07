@@ -1020,114 +1020,56 @@
                                         <ul class="list-unstyled clear-margin">
                                             <li class="card card-nested clearfix">
                                                 <div class="content">
-                                                    <p class="clear-margin relative"><i rel="tooltip" title="Currently Working" data-placement="left" class="icon-circle current-event"></i><strong>Chief Technology Officer</strong>,&nbsp;Tabyn
-                                                        (Global Concordia Solutions)</p>
-                                                    <p class="text-muted"><small><span class="space-right">Apr, 2026 - Present</span><span><i class="icon-clock mr-5"></i>5 months</span></small>
-                                                    </p>
-                                                    <div class="mop-wrapper space-bottom">
-                                                        <p>Second Global Concordia Solutions product, run in parallel with Shelter:
-                                                            a LoRaWAN livestock-monitoring platform for a pasture farm in Kazakhstan,
-                                                            with solar GNSS/BLE ear tags, an on-farm Rust server, a web console, and
-                                                            a role-based Android app. Sole engineer from requirements to release.</p>
-                                                    </div>
-                                                    <ul>
-                                                        <li class="mop-wrapper">
-                                                            <p>Built the end-to-end stack: tag uplinks through ChirpStack/MQTT into a
-                                                                Rust ingest server (axum, sqlx, PostGIS), REST and SSE, a React/MapLibre
-                                                                operator map, and a Kotlin/Compose Android app.</p>
-                                                        </li>
-                                                        <li class="mop-wrapper">
-                                                            <p>Chose an own Rust backend over a closed vendor stack and recorded the
-                                                                decision as an ADR, so protocol parsing, tenancy, and evidence journaling
-                                                                stay under the team&#39;s control.</p>
-                                                        </li>
-                                                        <li class="mop-wrapper">
-                                                            <p>Implemented multi-tenant isolation at the data layer with role-based write/read
-                                                                enforcement, a separate provisioning API, hashed credentials, and login
-                                                                throttling.</p>
-                                                        </li>
-                                                        <li class="mop-wrapper">
-                                                            <p>Wrote a pure Rust codec for the tag protocol and corrected several vendor-spec
-                                                                errors from live uplinks; a raw uplink journal is always kept as evidence.</p>
-                                                        </li>
-                                                        <li class="mop-wrapper">
-                                                            <p>Verified a 2,000-tag scale target with a synthetic uplink emulator; ran
-                                                                multi-day live tests with real solar tags at zero decode errors.</p>
-                                                        </li>
-                                                        <li class="mop-wrapper">
-                                                            <p>Reverse-engineered the tag&#39;s BLE configuration interface and firmware
-                                                                behaviour; reviewed and recomputed a supplied collar-mount design and generated
-                                                                a parametric STL for printing.</p>
-                                                        </li>
-                                                        <li class="mop-wrapper">
-                                                            <p>Set up CI with clippy and ESLint at zero warnings, database integration
-                                                                tests on fresh PostGIS instances, ru/en/kk localisation enforced at type-check
-                                                                time, and a tag-driven release pipeline building server, console, and APK.</p>
-                                                        </li>
-                                                        <li class="mop-wrapper">
-                                                            <p>Built the repository agent-first from day one: AGENTS.md map, 18 ADRs,
-                                                                execution plans, and an AI reviewer in the pre-commit hook.</p>
-                                                        </li>
-                                                        <li class="mop-wrapper">
-                                                            <p>Own the hardware side as well: negotiated enclosure changes on site with
-                                                                the tag manufacturer in China, designed and 3D-printed a collar mount for
-                                                                bulls that tear ear tags off, and work on precise positioning and the tag&#39;s
-                                                                energy budget (radio duty against power draw and solar intake).</p>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </li>
-                                            <li class="card card-nested clearfix">
-                                                <div class="content">
-                                                    <p class="clear-margin relative"><i rel="tooltip" title="Currently Working" data-placement="left" class="icon-circle current-event"></i><strong>Chief Technology Officer</strong>,&nbsp;Shelter
-                                                        (Global Concordia Solutions)</p>
+                                                    <p class="clear-margin relative"><i rel="tooltip" title="Currently Working" data-placement="left" class="icon-circle current-event"></i><strong>Chief Technology Officer</strong>,&nbsp;Global
+                                                        Concordia Solutions</p>
                                                     <p class="text-muted"><small><span class="space-right">Apr, 2025 - Present</span><span><i class="icon-clock mr-5"></i>1 year 4 months</span></small>
                                                     </p>
                                                     <div class="mop-wrapper space-bottom">
-                                                        <p>Led product and technical development of Shelter, an industrial safety
-                                                            platform for personnel positioning, incident monitoring, SOS workflows,
-                                                            and gas-detection scenarios on hazardous sites using LoRaWAN-based RTLS.</p>
+                                                        <p>CTO of a product company building industrial IoT software for personnel
+                                                            safety and asset monitoring, sold to large industrial customers directly
+                                                            and through OEM and reseller partners. Two product lines and a small engineering
+                                                            team that works agent-first.</p>
                                                     </div>
                                                     <ul>
                                                         <li class="mop-wrapper">
-                                                            <p>Developed and maintained Shelter software components while translating
-                                                                field and product needs into structured engineering tasks in Yandex Tracker.</p>
+                                                            <p>Replaced a closed vendor backend with our own Rust services, migrating
+                                                                module by module alongside the vendor system.</p>
                                                         </li>
                                                         <li class="mop-wrapper">
-                                                            <p>Designed and refined RBAC, incident handling, dispatcher workflows, SOS
-                                                                alerts, coverage/offline state handling, LoRa Spread Factor visibility,
-                                                                and gas alert voice notifications.</p>
+                                                            <p>Set the shipping model for offline and air-gapped sites: installable Linux
+                                                                packages for operator machines and servers, one codebase for several partner
+                                                                brands, a partner-facing API instead of one-off integrations.</p>
                                                         </li>
                                                         <li class="mop-wrapper">
-                                                            <p>Coordinated product quality with developers, contractors, and OEM partners;
-                                                                prepared documentation, manuals, presentations, and commercial proposals.</p>
+                                                            <p>Took a second product line from customer requirements to field trials
+                                                                in five months: one engineer plus coding agents, working through the same
+                                                                harness as the rest of the team.</p>
                                                         </li>
                                                         <li class="mop-wrapper">
-                                                            <p>Built subscription, licensing, and OEM white-label models including volume
-                                                                discounts, multi-year coefficients, and Base / Plus / Critical tiers.</p>
+                                                            <p>Introduced agent-first engineering across the company: coding agents take
+                                                                tasks from the tracker, open pull requests, pass automated review and tests,
+                                                                and ship through release pipelines; the whole development team works through
+                                                                the same skills, MCP servers and decision records.</p>
                                                         </li>
                                                         <li class="mop-wrapper">
-                                                            <p>Diagnosed hardware and radio issues around LoRa trackers, base stations,
-                                                                antennas, firmware behavior, GPS/BLE modules, gas sensors, and industrial
-                                                                Linux environments.</p>
+                                                            <p>Tech lead and maintainer of a small engineering team: hiring, code review,
+                                                                CI at zero warnings, tag-driven releases.</p>
                                                         </li>
                                                         <li class="mop-wrapper">
-                                                            <p>Run the company&#39;s repositories agent-first: AGENTS.md maps, ADRs and
-                                                                execution plans as decision memory, project skills and MCP servers so coding
-                                                                agents take a task from Yandex Tracker, open a PR, pass automated review
-                                                                and tests, and ship through the release pipeline with tracker status synced
-                                                                from CI; the whole development team works through these skills, agents,
-                                                                and MCP servers.</p>
+                                                            <p>Subscription, licensing and OEM white-label models (tiers, volume discounts,
+                                                                multi-year pricing); vendor and manufacturer management, including enclosure
+                                                                changes negotiated on site with the tag manufacturer; security questionnaires
+                                                                and compliance documentation for enterprise customers.</p>
                                                         </li>
                                                         <li class="mop-wrapper">
-                                                            <p>Ship the platform end to end as installable packages for customer machines
-                                                                and servers (Linux .deb/.rpm installers, Debian-packaged backend stack),
-                                                                with OS-vendor compatibility certification of the software.</p>
+                                                            <p>Hands-on: Rust (axum, PostGIS), Tauri/React, Kotlin/Jetpack Compose, ChirpStack/MQTT,
+                                                                protocol codecs for third-party hardware, BLE tooling and firmware analysis,
+                                                                3D-printed mounts.</p>
                                                         </li>
                                                         <li class="mop-wrapper">
-                                                            <p>Built the incident-video module (body-camera ingestion, incident matching,
-                                                                protected storage, in-app streaming) and map integrations (Leaflet operator
-                                                                maps, offline MBTiles on Android).</p>
+                                                            <p>Results so far: platforms in use at large enterprises in oil and gas and
+                                                                open-pit coal mining; a livestock-monitoring pilot with live solar tags,
+                                                                a 2,000-tag scale test and field radio tests out to about 8 km.</p>
                                                         </li>
                                                     </ul>
                                                 </div>
